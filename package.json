@@ -1,0 +1,12 @@
+{
+  "name": "tetrominoes",
+  "version": "1.0.0",
+  "description": "Basic 2D tetromino presets",
+  "license": "MIT",
+  "author": "Brandon Semilla <semibran@gmail.com>",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semibran/tetrominoes.git"
+  }
+}
