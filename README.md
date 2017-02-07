@@ -1,9 +1,9 @@
-# tetrominoes
-Basic 2D tetromino presets
+# tetromino
+> Basic 2D tetromino presets
 
 ## Installation
 ```sh
-npm install semibran/tetrominoes
+npm install semibran/tetromino
 ```
 
 ## License

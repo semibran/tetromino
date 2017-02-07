@@ -1,5 +1,5 @@
 {
-  "name": "tetrominoes",
+  "name": "tetromino",
   "version": "1.0.0",
   "description": "Basic 2D tetromino presets",
   "license": "MIT",
@@ -7,6 +7,6 @@
   "main": "lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/semibran/tetrominoes.git"
+    "url": "https://github.com/semibran/tetromino.git"
   }
 }
