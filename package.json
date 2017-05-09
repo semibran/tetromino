@@ -1,11 +1,12 @@
 {
   "name": "tetromino",
-  "version": "2.0.0",
-  "description": "Basic 2D tetromino presets",
-  "license": "MIT",
-  "author": "Brandon Semilla <semibran@gmail.com>",
-  "main": "lib",
-  "repository": {
+  "version": "0.1.0",
+  "description": "Minimal data structures for representing tetrominos",
+	"keywords": ["tetromino", "tetris"],
+	"main": "tetromino",
+	"license": "MIT",
+	"author": "Brandon Semilla (https://github.com/semibran)",
+	"repository": {
     "type": "git",
     "url": "https://github.com/semibran/tetromino.git"
   }
