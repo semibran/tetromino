@@ -3,7 +3,7 @@
 
 ![The seven tetrominos](tetrominos.png)
 
-A tetromino can be represented as an object with three properties: `type`, `rotation`, and `position`. From this information, we can deduce the location of each of the four cells that the tetromino occupies (i.e. `blocks`).
+A tetromino can be represented as an object with three properties: `type`, `rotation`, and `position`. From this information, we can deduce the location of each of the four cells that the tetromino occupies (`Tetromino.blocks(tetromino)`).
 
 The `type` of a tetromino is its single character name. In the above image, they are listed in the order `['I', 'J', 'L', 'O', 'S', 'T', 'Z']`. This particular array can be accessed via `Tetromino.types`.
 
