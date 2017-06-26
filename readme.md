@@ -1,7 +1,7 @@
 # tetromino
 > Minimal data structures for representing [tetrominos](https://en.wikipedia.org/wiki/Tetromino)
 
-![The seven tetrominos](tetrominos.png)
+![The seven tetrominos](img/tetrominos.png)
 
 ## install
 ```sh
@@ -52,6 +52,8 @@ A tetromino's `rotation` is a zero-based index corresponding to a "rotation stat
 
 ### position
 The `position` of a tetromino is a two-dimensional vector of the form `[x, y]`. Since the center point of each tetromino will vary, `position` is relative to the top-left point of the 4x4 region containing the piece.
+
+![4x4 region](img/tetromino.png)
 
 ### states
 The `states` object details the locations of each cell of the desired tetromino relative to this point in compliance with the [SRS](http://tetris.wikia.com/wiki/SRS).
