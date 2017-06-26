@@ -29,38 +29,40 @@ From this information, we can easily determine the location of each of the four 
 ```
 
 ### type
-The `type` of a tetromino is a single character denoting its unique name. The image above lists the tetrominos in the order `[I, J, L, O, S, T, Z]` - in fact, this particular array is exposed as `types`:
+The `type` of a tetromino is a single character denoting its unique name. The image at the top of this page lists the tetrominos in the order `[I, J, L, O, S, T, Z]` - in fact, this particular array is exposed as `types`:
 ```js
 > types
 [ 'I', 'J', 'L', 'O', 'S', 'T', 'Z' ]
 ```
-This array may be used to choose a random tetromino to spawn.
+A common use case for this array is choosing a random tetromino to spawn.
 ```js
 > types[Math.floor(Math.random() * types.length)]
 'S'
 ```
 
+### position
+The `position` of a tetromino is a two-dimensional vector of the form `[x, y]`. Since the center point of each tetromino will vary, `position` is relative to the top-left point of the 4x4 region containing the piece.
+
+![S tetromino demonstrating position](img/position.png)
+
 ### rotation
 A tetromino's `rotation` is a zero-based index corresponding to a "rotation state" found in `states`. Most tetrominos have 4 rotation states, with the `O` piece being the exception. It only has one state and therefore cannot rotate.
 ```js
-> states.J.length
+> states.T.length
 4
 
 > states.O.length
 1
 ```
 
-### position
-The `position` of a tetromino is a two-dimensional vector of the form `[x, y]`. Since the center point of each tetromino will vary, `position` is relative to the top-left point of the 4x4 region containing the piece.
-
-![4x4 region](img/tetromino.png)
+![J tetromino demonstrating rotation](img/rotation.gif)
 
 ### states
-The `states` object details the locations of each cell of the desired tetromino relative to this point in compliance with the [SRS](http://tetris.wikia.com/wiki/SRS).
+The `states` object details the locations of each cell of a tetromino with a given type and rotation in compliance with the [SRS](http://tetris.wikia.com/wiki/SRS). It is used internally in the `blocks` function mentioned above.
 
-Use it by specifying both [a tetromino type](#type) and [a rotation index](#rotation).
+Use `states` by specifying both [a tetromino type](#type) and [a rotation index](#rotation).
 ```js
-> states[tetromino.type][tetromino.rotation]
+> states.J[0]
 [ [ 0, 1 ], [ 1, 1 ], [ 2, 1 ], [ 2, 0 ] ]
 ```
 
