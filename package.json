@@ -2,11 +2,9 @@
   "name": "tetromino",
   "version": "1.0.0",
   "description": "Minimal data structures for representing tetrominos",
-  "keywords": [
-    "tetromino",
-    "tetris"
-  ],
   "main": "index.js",
+  "files": ["states.js"],
+  "keywords": ["tetromino", "tetris"],
   "license": "MIT",
   "author": "Brandon Semilla (https://github.com/semibran)",
   "repository": {
