@@ -1,5 +1,5 @@
 # tetromino
-> Minimal data structures for representing tetrominos
+> Minimal data structures for representing [tetrominos](https://en.wikipedia.org/wiki/Tetromino)
 
 ![The seven tetrominos](tetrominos.png)
 
@@ -9,7 +9,7 @@ The `type` of a tetromino is its single character name. In the above image, they
 
 A tetromino's `rotation` is a zero-based index corresponding to a "rotation state" found in `Tetromino.states[type]`. Most tetrominos have 4 rotation states, with the `O` piece being the exception. It only has one state and therefore cannot rotate.
 
-The `position` of a tetromino is a vector with components `x` and `y` (e.g. `{ x: 3, y: 0 }`). Since the center point of each tetromino will vary, `position` is relative to the top-left point of the 4x4 region containing the piece. The `Tetromino.states` object details the locations of each cell of the desired piece relative to this point in compliance with the [SRS](http://tetris.wikia.com/wiki/SRS).
+The `position` of a tetromino is a 2-D vector of the form `[x, y]`. Since the center point of each tetromino will vary, `position` is relative to the top-left point of the 4x4 region containing the piece. The `Tetromino.states` object details the locations of each cell of the desired piece relative to this point in compliance with the [SRS](http://tetris.wikia.com/wiki/SRS).
 
 ## install
 ```sh
@@ -17,4 +17,4 @@ npm install tetromino
 ```
 
 ## license
-MIT
+[MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)
