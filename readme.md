@@ -1,14 +1,10 @@
 # tetromino
-> Minimal data structures for representing [tetrominos](https://en.wikipedia.org/wiki/Tetromino)
-
 ![The seven tetrominos](img/tetrominos.png)
 
-## install
-```sh
-npm install tetromino
-```
+> Minimal data structures for representing [tetrominos](https://en.wikipedia.org/wiki/Tetromino)
 
 ## usage
+[![NPM](https://nodei.co/npm/tetromino.png?mini)](https://www.npmjs.com/package/tetromino)
 ```js
 const { types, states, blocks } = require('tetromino')
 ```
@@ -65,6 +61,9 @@ Use `states` by specifying both [a tetromino type](#type) and [a rotation index]
 > states.J[0]
 [ [ 0, 1 ], [ 1, 1 ], [ 2, 1 ], [ 2, 0 ] ]
 ```
+
+## see also
+- [`semibran/vector`](https://github.com/semibran/vector): move tetrominos with `add(tetromino.position, direction)`
 
 ## license
 [MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)
